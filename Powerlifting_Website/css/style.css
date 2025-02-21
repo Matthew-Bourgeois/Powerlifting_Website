@@ -30,17 +30,15 @@ nav a {
 
       
     
-#about {
-            background-image: url('images/gym.jpg');
-            background-size: cover;                   /* Make sure the image covers the entire section */
-            background-position: center;              /* Center the image */
-            background-repeat: no-repeat;
-            color: limegreen;          /* Change font color to lime green */
-            text-align: center;        /* Center the text */
-            padding: 0px;             /* Add padding around the section */
-            width: 100%;                /* Set a max width for the section */
-            margin: 0px ;         /* Center the section on the page */
-        }
+    #about {
+        background-color: black;  /* Solid black background */
+        color: limegreen;         /* Keep text lime green */
+        text-align: center;       /* Center the text */
+        padding: 20px;            /* Add padding around the section */
+        width: 100%;              /* Full width */
+        margin: 0px auto;         /* Center the section */
+    }
+        
         
         #about h2 {
             font-size: 2rem;           /* Adjust heading size */
@@ -72,17 +70,23 @@ nav a {
             position: relative;
         }
         
+        .carousel-item img {
+            object-fit: cover;    /* Ensures the image covers the container */
+            width: 100%;          /* Image spans full width */
+            height: 400px;  }
+
         .carousel-caption {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+            background-color: rgba(0, 0, 0, 0); 
             color: rgba(34, 241, 7, 0.911);
             padding: 20px;
             border-radius: 10px;
-            width: 80%;
-            text-align: left;
+            width: 50%;
+            text-align: center;
+            
         }
         
         .carousel-caption h5 {
