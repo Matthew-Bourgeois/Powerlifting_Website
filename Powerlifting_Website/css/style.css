@@ -113,7 +113,19 @@ nav a {
             color: limegreen;
         }
 
+        #gear {
+            padding: 30px;
+            background-color: black;
+            color: limegreen;
+        }
+        
+        #calc {
+            padding: 30px;
+            background-color: black;
+            color: limegreen;
+        }
 
+        
         
         
         /* Add padding to footer (Optional for uniformity) */
