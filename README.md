@@ -2,6 +2,9 @@
 
 ## Created by: Matthew Bourgeois
 
+### Live Link: https://matthew-bourgeois.github.io/Powerlifting_Website/
+GitHub Link: https://github.com/Matthew-Bourgeois/Powerlifting_Website.git
+
 ### Project Overview/Description:
 This project is an informational website focused on powerlifting. It provides a comprehensive guide to the sport, covering the three main lifts—squat, bench press, 
 and deadlift—along with tips, equipment recommendations, and tools such as a 1 Rep Max calculator. The website also includes a gallery of powerlifting images and a contact form for users to reach out.
