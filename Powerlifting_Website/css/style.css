@@ -173,6 +173,9 @@ nav a {
             font-weight: bold;
         }
         
+        html {
+            scroll-behavior: smooth;
+        }
         
         /* Add padding to footer (Optional for uniformity) */
         footer {
