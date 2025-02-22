@@ -118,12 +118,34 @@ nav a {
             background-color: black;
             color: limegreen;
         }
+
+        #gear ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        #gear li {
+            margin: 15px 0;
+            padding: 10px;
+            border: 2px solid rgb(243, 244, 243);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        #gear li:hover {
+            background-color: limegreen;
+            color: black;
+            transform: scale(1.05);
+        }
         
         #calc {
             padding: 30px;
             background-color: black;
             color: limegreen;
-        }
+        } 
 
         
         
