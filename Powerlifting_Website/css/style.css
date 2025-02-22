@@ -11,6 +11,10 @@ header {
     color: rgb(9, 243, 28);
     padding: 20px;
     text-align: center;
+    font-size: 2rem; /* Increases font size */
+    font-family: 'Orbitron', sans-serif; /* Example of a unique futuristic font */
+    text-transform: uppercase; /* Makes text all uppercase for emphasis */
+    letter-spacing: 2px; /* Adds spacing between letters */
 }
 
 nav ul {
@@ -26,7 +30,7 @@ nav ul li {
 
 nav a {
     color: rgb(27, 250, 7);  
-    text-decoration: none; } 
+    text-decoration:'text-decoration-line' ; } 
 
       
     
@@ -73,7 +77,7 @@ nav a {
         .carousel-item img {
             object-fit: cover;    /* Ensures the image covers the container */
             width: 100%;          /* Image spans full width */
-            height: 400px;  }
+            height: 1000px;  }
 
         .carousel-caption {
             position: absolute;
