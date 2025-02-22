@@ -176,11 +176,42 @@ nav a {
         html {
             scroll-behavior: smooth;
         }
+
         
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 20px; /* Space between images */
+            padding: 20px;
+        }
+        
+        .gallery-item {
+            display: inline-block; /* Keeps items inline */
+            width: auto; /* Adapts to the image width */
+            height: auto; /* Adapts to the image height */
+            text-align: center; /* Centers text under images */
+            padding: 5px; /* Optional spacing */
+        }
+        
+        .gallery-item img {
+            width: 100%; /* Make all images fill their container */
+            height: 250px; /* Set a fixed height */
+            object-fit: cover; /* Crop image while maintaining aspect ratio */
+            border-radius: 10px; /* Optional: rounded corners */
+        }
+        
+        /* Add hover effect on images */
+        .gallery-item img:hover {
+            transform: scale(1.05); /* Slight zoom effect */
+        }
+        
+       
         /* Add padding to footer (Optional for uniformity) */
         footer {
             background-color: #222; /* Dark background for footer */
             color: limegreen;       /* Lime green text */
             text-align: center;
-            padding: 10px;
+            padding: 50px;
         }
+        
