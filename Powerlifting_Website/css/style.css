@@ -140,6 +140,25 @@ nav a {
             color: black;
             transform: scale(1.05);
         }
+
+        #gear .cta {
+            text-align: center;
+            margin-top: 20px;}
+
+            #gear .btn {
+                background-color: limegreen;
+                color: black;
+                padding: 15px 30px;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                border-radius: 30px;
+                text-decoration: none;
+                transition: background-color 0.3s ease;
+            }
+            #gear .btn:hover {
+                background-color: #f39c12;
+                color: white;
+            }
         
         #calc {
             padding: 30px;
@@ -147,7 +166,12 @@ nav a {
             color: limegreen;
         } 
 
-        
+        #result {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: limegreen;
+            font-weight: bold;
+        }
         
         
         /* Add padding to footer (Optional for uniformity) */
