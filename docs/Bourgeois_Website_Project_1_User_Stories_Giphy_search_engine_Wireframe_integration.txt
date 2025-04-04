@@ -1,0 +1,84 @@
+Created by: Matthew Bourgeois
+
+User Stories for My Powerlifting Website : Integrating Giphy search engine 
+
+
+Powerlifting Gif Search - User Stories & Planning
+Overview:
+This project involves creating a search engine where users can search for gifs related to powerlifting using the Giphy API. The site will display gifs in a responsive grid layout, ensuring a smooth experience on both desktop and mobile devices.
+
+
+User Stories:
+As a user, I want to search for gifs related to powerlifting, so I can view funny or inspirational gifs while I browse.
+
+As a user, I want to be able to submit a search term and view related gifs in a grid format, so I can explore different images.
+
+As a user, I want the site to be responsive, so I can search and view gifs on both desktop and mobile devices.
+
+
+
+Page Layout:
+Page Layout (Desktop):
++-----------------------------------------------+
+|                   Header                     |  <- Contains site title and navigation links
++-----------------------------------------------+
+|             Search Bar + Submit Button        |  <- Centered search bar and button
++-----------------------------------------------+
+|                   Gif Grid                   |  <- Gifs in a 3-4 column grid, each displayed in a square/rectangular box
++-----------------------------------------------+
+|                    Footer                    |  <- (Optional) Can include additional links or info
++-----------------------------------------------+
+
+
+Page Layout (Mobile):
++-----------------------------------------------+
+|                   Header                     |  <- Site title centered at top
++-----------------------------------------------+
+|             Search Bar + Submit Button        |  <- Search bar and button stacked vertically, full width
++-----------------------------------------------+
+|                   Gif Grid                   |  <- Gifs displayed in a single column, stacked vertically
++-----------------------------------------------+
+|                    Footer                    |  <- (Optional) Positioned at the bottom of the page
++-----------------------------------------------+
+
+
+User Flow:
+Step 1: Landing Page
+
+User arrives on the homepage, which features a prominent search bar and submit button. The site title is at the top.
+
+Step 2: Input Search Term
+
+The user enters a search keyword (e.g., "powerlifting") into the search bar and clicks the search button to submit.
+
+Step 3: API Call
+
+The site sends a request to the Giphy API using the entered keyword.
+
+The API returns a list of related gifs.
+
+Step 4: Display Results
+
+The returned gifs are displayed in a grid layout (3-4 columns on desktop, 1 column on mobile).
+
+Each gif is clickable, allowing the user to view the gifs in a larger format (optional).
+
+Step 5: Interaction with Gifs (Optional)
+
+User can click on any gif to view it in full size.
+
+User can return to the search bar and try another keyword.
+
+Step 6: Responsive Design
+
+The page adjusts automatically depending on whether the user is on desktop or mobile.
+
+On desktop, the gifs are arranged in a grid, while on mobile, the gifs are stacked vertically.
+
+
+
+Conclusion:
+This planning phase outlines the key user stories, page layout, and user flow for the Powerlifting Gif Search website. By following these guidelines, we will ensure that the site is functional, responsive, and user-friendly across all devices.
+
+
+
