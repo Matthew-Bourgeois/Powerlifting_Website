@@ -24,6 +24,7 @@ function fetchGiphy(query) {
 // Function to display fetched GIFs
 function displayResults(data) {
     const resultsDiv = document.getElementById('results');
+    resultsDiv.innerHTML = '';
     const gifs = data.data;
 
     gifs.forEach(gif => {
