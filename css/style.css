@@ -177,6 +177,52 @@ nav a {
             scroll-behavior: smooth;
         }
 
+        #contact {
+            background-color: black; /* Match site theme */
+            color: limegreen;
+            text-align: center;
+            padding: 30px;
+        }
+        
+        #contact form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column; /* Stack inputs vertically */
+            gap: 10px; /* Add space between elements */
+        }
+        
+        #contact input,
+        #contact textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid limegreen;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+        }
+        
+        #contact button {
+            background-color: limegreen;
+            color: black;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        
+        #contact button:hover {
+            background-color: #f39c12;
+            color: white;
+        }
+        
+        /* Ensure stacking on mobile */
+        @media screen and (max-width: 768px) {
+            #contact form {
+                width: 90%; /* Ensure form takes most of the screen */
+            }
+        }
         
 
         .gallery-container {
