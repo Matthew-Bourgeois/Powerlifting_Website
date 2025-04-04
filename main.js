@@ -19,10 +19,22 @@ const resultsDiv = document.getElementById('results');
 
 // Event listener  form submission
 searchForm.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the form from submitting normally 
+    event.preventDefault(); 
     
-    const query = searchInput.value.trim(); // Get  search input value
+    const query = searchInput.value.trim(); 
     if (query) {
-        fetchGiphy(query);  // Call function  fetch GIFs based on  search 
+        fetchGiphy(query);  
     }
 });
+
+// Function to fetch GIFs from the Giphy API
+function fetchGiphy(query) {
+    const apiKey = 'gb131SYvgYNMPoFCItfiOwHgBnjMhzJT';  
+    const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${query}&limit=10`;  // Construct API URL
+
+
+    // Fetch the data from Giphy API
+     fetch(url)
+     .then(response => response.json())  
+     .then(data => displayResults(data)) 
+     .catch(error => console.log('Error fetching data:', error)); }
