@@ -218,40 +218,41 @@ nav a {
         
         
        /* Styles for GIF display */
-#results {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-    background-color: black;  /* Match the website background */
-    padding: 20px;
-    border-radius: 10px;
-}
-
-#results .gif-container {
-    margin: 10px;
-    border: 2px solid limegreen;  /* Match the lime green theme */
-    border-radius: 10px;
-    padding: 5px;
-    width: 300px;
-    text-align: center;
-    background-color: black;  /* Maintain dark background */
-}
-
-#results .gif-container img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-#results .gif-container a {
-    color: limegreen;  /* Match the website's link color */
-    font-weight: bold;
-    text-decoration: none;
-    display: block;
-    margin-top: 10px;
-}
-
-#results .gif-container a:hover {
-    color: #f39c12;  /* Optional hover effect to match theme */
-}
+       #results {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        justify-items: center;
+        background-color: black; /* Set background color to black */
+    }
+    
+    .gif-container {
+        background-color: #222; /* Dark background for the container */
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .gif-container:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .gif-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .gif-title {
+        background-color: #222; /* Keep the background dark for the title */
+        color: limegreen;
+        padding: 10px;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
