@@ -1,25 +1,19 @@
-const apiKey = 'gb131SYvgYNMPoFCItfiOwHgBnjMhzJT';
+const apiKey = 'gb131SYvgYNMPoFCItfiOwHgBnjMhzJT'; // Giphy API key
 
 // Function to fetch GIFs from Giphy API 
 function fetchGiphy(query) {
-    const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${query}&limit=10`;  // Construct API URL
-    console.log("Fetching GIFs for query:", query); // Debug log
+    const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${query}&limit=10`; // Construct API URL
 
     // Fetch the data from Giphy API
     fetch(url)
         .then(response => response.json())  
-        .then(data => {
-            console.log("Data fetched:", data); // Debug log
-            displayResults(data);
-        }) 
+        .then(data => displayResults(data)) 
         .catch(error => console.log('Error fetching data:', error)); 
 }
 
 // Function to display fetched GIFs on the webpage
 function displayResults(data) {
-    const resultsDiv = document.getElementById('results');  // Ensure the resultsDiv is correctly initialized here
-    console.log("Displaying results..."); // Debug log
-
+    const resultsDiv = document.getElementById('results');  // Get the results div from HTML
     resultsDiv.innerHTML = '';  // Clear any previous results
 
     const gifs = data.data;  // Get the GIF data from the API response
@@ -35,14 +29,12 @@ function displayResults(data) {
     });
 }
 
-// Wait for the DOM to load
+// Wait for the DOM to load before attaching event listeners
 document.addEventListener('DOMContentLoaded', function () {
     // Get elements from the HTML
     const searchForm = document.getElementById('search-form');
     const searchInput = document.getElementById('search-input');
     const resultsDiv = document.getElementById('results');
-
-    console.log("DOM loaded, ready for search..."); // Debug log
 
     // Event listener for form submission
     searchForm.addEventListener('submit', function(event) {
