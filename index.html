@@ -142,27 +142,29 @@
         </div>
     </section>
 
-    <section id="calc">
-        <h2>"1 Rep Max Calculator"</h2>
-        <form id="calcForm">
-            <label for="weight">Weight Lifted (lbs):</label>
-            <input type="number" id="weight" name="weight" required>
-    
-            <label for="reps">Reps Completed:</label>
-            <input type="number" id="reps" name="reps" required>
-    
-            <button type="submit">Calculate</button>
-        </form>
-    
-        <!-- This is where the result will be displayed -->
-       <!-- Loader for Giphy search -->
-<div id="loading" style="display:none;">
-    <img src="images/bench-loading.gif" alt="Loading...">
-</div>
-
-<!-- Your search results section -->
-<div id="results"></div>
-    </section>
+  <section id="calc">
+      <h2>"1 Rep Max Calculator"</h2>
+      <form id="calcForm">
+          <label for="weight">Weight Lifted (lbs):</label>
+          <input type="number" id="weight" name="weight" required>
+  
+          <label for="reps">Reps Completed:</label>
+          <input type="number" id="reps" name="reps" required>
+  
+          <button type="submit">Calculate</button>
+      </form>
+  
+      <!-- 🛠️ FIXED: Added result display -->
+      <div id="result" style="margin-top: 10px;"></div>
+  
+      <!-- Loader for Giphy search -->
+      <div id="loading" style="display:none;">
+          <img src="images/bench-loading.gif" alt="Loading...">
+      </div>
+  
+      <!-- Giphy search results -->
+      <div id="results"></div>
+  </section> 
 
     <section id="contact">
         <br><br><br><br>
@@ -218,6 +220,8 @@
     <p>Created by Matthew Bourgeois</p>
     </footer>
 
+    
+    
     <script>
         // Wait for the DOM to fully load before executing
         document.addEventListener('DOMContentLoaded', function() {
@@ -242,6 +246,7 @@
                 // Apply the Epley formula for 1 Rep Max calculation: 1RM = weight * (1 + (0.0333 * reps))
                 var oneRepMax = weight * (1 + (0.0333 * reps));
     
+
                 // Display the result
                 document.getElementById('result').innerHTML = "Your 1 Rep Max is: " + oneRepMax.toFixed(2) + " lbs";
             });
