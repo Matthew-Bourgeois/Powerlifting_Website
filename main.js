@@ -3,16 +3,23 @@ const apiKey = 'gb131SYvgYNMPoFCItfiOwHgBnjMhzJT';
 // Function to fetch GIFs from Giphy API 
 function fetchGiphy(query) {
     const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${query}&limit=10`;  // Construct API URL
+    console.log("Fetching GIFs for query:", query); // Debug log
 
     // Fetch the data from Giphy API
     fetch(url)
         .then(response => response.json())  
-        .then(data => displayResults(data)) 
+        .then(data => {
+            console.log("Data fetched:", data); // Debug log
+            displayResults(data);
+        }) 
         .catch(error => console.log('Error fetching data:', error)); 
 }
 
 // Function to display fetched GIFs on the webpage
 function displayResults(data) {
+    const resultsDiv = document.getElementById('results');  // Ensure the resultsDiv is correctly initialized here
+    console.log("Displaying results..."); // Debug log
+
     resultsDiv.innerHTML = '';  // Clear any previous results
 
     const gifs = data.data;  // Get the GIF data from the API response
@@ -34,6 +41,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const searchForm = document.getElementById('search-form');
     const searchInput = document.getElementById('search-input');
     const resultsDiv = document.getElementById('results');
+
+    console.log("DOM loaded, ready for search..."); // Debug log
 
     // Event listener for form submission
     searchForm.addEventListener('submit', function(event) {
