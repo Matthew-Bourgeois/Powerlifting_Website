@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin:0;
     padding: 0;
-    background-color: #000a04e5;
+    background-color: #000a04e5 !important;
     color: #53f707;
 }
 
@@ -259,14 +259,14 @@ nav a {
 
     /* Style for the Giphy Search form */
 #search-form {
-    background-color: #000; /* Black background */
+    background-color: #000; 
     padding: 20px;
-    text-align: center; /* Center align the form */
-    border-radius: 8px; /* Slightly rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
+    text-align: center; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
     margin: 20px auto;
-    width: 80%; /* Responsive width */
-    max-width: 600px; /* Limit max width */
+    width: 80%; 
+    max-width: 600px; 
 }
 
 #search-form h2 {
@@ -288,6 +288,6 @@ nav a {
 }
 
 #search-form input::placeholder {
-    color: #aaa;
+    color: #fd0808;
 }
     
