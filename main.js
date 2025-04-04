@@ -3,6 +3,13 @@ const apiKey = 'gb131SYvgYNMPoFCItfiOwHgBnjMhzJT'; // Giphy API key
 // Function to fetch GIFs from Giphy API 
 function fetchGiphy(query) {
     const loader = document.getElementById('loading');
+    const errorMessage = document.getElementById('error-message'); // Element to show error message
+    const resultsDiv = document.getElementById('results');
+
+    // Clear any previous results and hide error message
+    resultsDiv.innerHTML = '';
+    errorMessage.style.display = 'none';
+
     const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${query}&limit=8`;
 
     loader.style.display = 'block'; // Show loader
@@ -10,21 +17,26 @@ function fetchGiphy(query) {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            setTimeout(() => {
-                loader.style.display = 'none'; // Hide loader after delay
+            loader.style.display = 'none'; // Hide loader
+
+            if (data.data.length === 0) {
+                // Show error message if no results
+                errorMessage.textContent = 'No GIFs found. Please try a different search.';
+                errorMessage.style.display = 'block';
+            } else {
                 displayResults(data);
-            }, 1000); // Delay in ms
+            }
         })
         .catch(error => {
-            console.log('Error fetching data:', error);
-            loader.style.display = 'none'; // Hide loader if error occurs
+            loader.style.display = 'none'; // Hide loader on error
+            errorMessage.textContent = 'An error occurred while fetching the GIFs. Please try again later.';
+            errorMessage.style.display = 'block'; // Show error message if there's an error
         });
 }
 
 // Function to display fetched GIFs
 function displayResults(data) {
     const resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = '';
     const gifs = data.data;
 
     gifs.forEach(gif => {
