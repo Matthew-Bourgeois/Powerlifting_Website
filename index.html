@@ -39,6 +39,16 @@
     <input type="text" id="search-input" placeholder="Search for GIFs...">
     <button type="submit">Search</button>
 </form>
+
+<!-- Loader for Giphy search -->
+<div id="loading" style="display:none;">
+    <img src="images/bench-loading.gif" alt="Loading...">
+  </div>
+
+  <!-- Giphy search results -->
+  <div id="results"></div>
+</section> 
+
 <div id="results"></div>
 
 
@@ -157,14 +167,7 @@
       <!-- 🛠️ FIXED: Added result display -->
       <div id="result" style="margin-top: 10px;"></div>
   
-      <!-- Loader for Giphy search -->
-      <div id="loading" style="display:none;">
-          <img src="images/bench-loading.gif" alt="Loading...">
-      </div>
-  
-      <!-- Giphy search results -->
-      <div id="results"></div>
-  </section> 
+      
 
     <section id="contact">
         <br><br><br><br>
