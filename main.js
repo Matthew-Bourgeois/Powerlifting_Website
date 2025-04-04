@@ -2,7 +2,7 @@ const apiKey = 'gb131SYvgYNMPoFCItfiOwHgBnjMhzJT'; // Giphy API key
 
 // Function to fetch GIFs from Giphy API 
 function fetchGiphy(query) {
-    const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${query}&limit=10`; // Construct API URL
+    const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${query}&limit=8`; // Construct API URL
 
     // Fetch the data from Giphy API
     fetch(url)
