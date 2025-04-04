@@ -2,23 +2,22 @@ const apiKey = 'gb131SYvgYNMPoFCItfiOwHgBnjMhzJT'; // Giphy API key
 
 // Function to fetch GIFs from Giphy API 
 function fetchGiphy(query) {
-    const loader = document.getElementById('loading'); // Get loader element
-    const resultsDiv = document.getElementById('results'); // Get results div
+    const loader = document.getElementById('loading');
+    const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${query}&limit=8`;
 
     loader.style.display = 'block'; // Show loader
-    resultsDiv.innerHTML = ''; // Clear previous results
-
-    const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${query}&limit=8`; // API URL
 
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            displayResults(data); // Display new GIFs
-            loader.style.display = 'none'; // Hide loader after results load
+            setTimeout(() => {
+                loader.style.display = 'none'; // Hide loader after delay
+                displayResults(data);
+            }, 1000); // Delay in ms
         })
         .catch(error => {
             console.log('Error fetching data:', error);
-            loader.style.display = 'none'; // Hide loader on error
+            loader.style.display = 'none'; // Hide loader if error occurs
         });
 }
 
