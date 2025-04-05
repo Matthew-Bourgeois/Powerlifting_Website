@@ -1,42 +1,59 @@
-# Powerlifting Website
+**Powerlifting Website**
 
-## Created by: Matthew Bourgeois
 
-### Live Link: https://matthew-bourgeois.github.io/Powerlifting_Website/
-GitHub Link: https://github.com/Matthew-Bourgeois/Powerlifting_Website.git
+**Created by: Matthew Bourgeois**
 
-### Project Overview/Description:
-This project is an informational website focused on powerlifting. It provides a comprehensive guide to the sport, covering the three main lifts—squat, bench press, 
-and deadlift—along with tips, equipment recommendations, and tools such as a 1 Rep Max calculator. The website also includes a gallery of powerlifting images and a contact form for users to reach out.
 
-### Features and Functionality:
-- **Home Page**: Navigation links to sections about the sport, the lifts, gear, and more.
-- **About Section**: Describes powerlifting and the importance of the three main lifts.
-- **Lifts Section**: A carousel showcasing the squat, bench press, and deadlift with detailed tips.
-- **Gear Section**: Provides links to powerlifting gear such as belts, shoes, and socks.
-- **1 Rep Max Calculator**: Allows users to calculate their 1 Rep Max based on the weight lifted and number of reps performed.
-- **Contact Section**: A form for users to submit inquiries via email.
-- **Gallery**: A collection of powerlifting images featuring male and female athletes performing different lifts.
+**Live Link:** https://matthew-bourgeois.github.io/Powerlifting_Website/
+**GitHub Link:** https://github.com/Matthew-Bourgeois/Powerlifting_Website.git
 
-### Technologies Used:
-- **HTML**: Used to structure the content and layout of the website.
-- **CSS**: Used for styling the website, ensuring it’s visually appealing and responsive.
-- **Bootstrap**: Used for the carousel and layout grid system to ensure mobile responsiveness.
-- **Font Awesome**: Used to include icons for gear items in the Gear section.
-- **JavaScript**: Used to power the 1 Rep Max Calculator functionality.
 
-### How to Use:
-1. Clone the repository to your local machine.
-2. Open the `index.html` file in your browser.
-3. Navigate through the different sections using the navigation bar.
-4. In the **Lifts Section**, use the carousel to view tips for each main lift (Squat, Deadlift, Bench Press).
-5. In the **Gear Section**, click on the links to shop for recommended powerlifting gear.
-6. Use the **1 Rep Max Calculator** in the Calc section to calculate your 1 Rep Max by inputting the weight lifted and reps completed.
-7. If you have questions or feedback, use the **Contact Us** form to get in touch.
+**Project Description**
+This project is a Powerlifting Website built as part of my Software Engineering Bootcamp at the University of Tennessee at Knoxville. It includes features such as a 1 Rep Max Calculator, a Giphy Search Engine, and a Powerlifting Gear Gallery. The website is designed with responsive features to look great on both desktop and mobile devices.
 
-### Ideas for Future Improvements:
-- Implement a blog or articles section with training tips and powerlifting-related news.
-- Add more interactive elements, such as tutorials or video demonstrations of the lifts.
-- Integrate a weightlifting program generator based on user preferences and goals.
-- Improve the design with additional CSS animations for a more dynamic user experience.
-- Add a section with common powerlifting myths and debunk them.
+
+**Features**
+Giphy Search Engine: Users can search for GIFs based on their query, leveraging the Giphy API to display the results dynamically.
+
+1 Rep Max Calculator: A calculator for determining an individual's 1 Rep Max based on their lifting stats.
+
+Powerlifting Gear Gallery: A showcase of powerlifting gear with links to purchase or learn more about specific items.
+
+Contact Form: A contact form for users to get in touch.
+
+
+**Built With**
+HTML (for structure)
+CSS (for styling and layout)
+JavaScript (for dynamic content, API integration, and interactivity)
+Giphy API (for GIF search functionality)
+
+**Installation Instructions**
+Clone the repository:
+git clone https://github.com/Matthew-Bourgeois/Powerlifting_Website.git
+Open the project folder in your code editor.
+Run the website locally by opening the index.html file in a browser.
+
+**How to Use**
+Giphy Search: Enter a search term into the input field, press submit, and watch GIFs load based on the search query.
+1 Rep Max Calculator: Enter the weight you can lift for 3-5 reps, and the website will calculate your 1 Rep Max.
+Gallery: Browse through different powerlifting gear in the gallery section.
+Contact: Fill out the contact form to reach out for inquiries.
+
+
+**Technologies Used**
+HTML5
+CSS3
+JavaScript
+Giphy API
+GitHub Pages (for hosting)
+
+
+**Project Status**
+This project is currently complete. However, future improvements may include additional features or updates.
+
+**Future Improvements**
+User Authentication: Add a user login system so that users can save their 1 Rep Max results or gear preferences across sessions.
+More Interactive Calculators: Add more fitness-related calculators, such as Body Mass Index (BMI) or Macros Calculator, for users to better track their progress.
+Powerlifting Progress Tracker: Implement a feature where users can log their workouts and track their progress over time, visualizing improvements in strength and lifting performance.
+
